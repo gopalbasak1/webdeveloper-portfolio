@@ -1,9 +1,17 @@
+/* Common/Share */
 body{
     font-family: 'Open Sans', sans-serif;
 }
 .text-primary{
     color:#FD6E0A;
 }
+.section-title{
+    color:#181818;
+    font-size:35px;
+    font-weight: 700;
+    text-align: center;
+}
+/* Header Part */
 nav{
     display:flex;
     justify-content: space-between;
@@ -44,12 +52,42 @@ nav a{
 /* Header related css */
 .header{
     background-color: #FFF8F3;
+    background: url('../images/header_bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 .banner{
-    padding:30px 30px 30px 150px;
+    padding:30px 30px 0px 150px;
     display:flex;
     align-items: center;
+    justify-content: space-around;
+}
+
+.banner-content{
+    max-width:500px;
 }
 .banner .profile-picture{
     width:500px;
+}
+
+.banner-greating{
+    font-size: 45px;
+    color:#474747;
+    margin-bottom:0;
+}
+
+.banner-title{
+    font-size:75px;
+    font-weight: 600;
+    margin-top:5px;
+    margin-bottom:20px;
+}
+
+/* About Section */
+
+.about{
+    padding:130px;
+    background-color: #FFF8F3;
+    border-radius: 10px;
+    margin:130px 0;
 }
