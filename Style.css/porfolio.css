@@ -51,10 +51,12 @@ nav a{
 }
 /* Header related css */
 .header{
+    /* width:1400px; */
     background-color: #FFF8F3;
     background-image: url('../images/header_bg.png'), url('../images/developer.png');
     background-repeat: no-repeat;
     background-position: bottom right, top left;
+    
 }
 .banner{
     padding:30px 30px 0px 150px;
@@ -69,7 +71,9 @@ nav a{
 .banner .profile-picture{
     width:500px;
 }
-
+.profile-picture{
+  
+}
 .banner-greating{
     font-size: 45px;
     color:#474747;
@@ -112,9 +116,13 @@ main{
 .skill-container{
     display:flex;
 }
-.skill{
-    padding:30px;
-    gap:24px;
+.skill {
+    padding: 30px;
+    margin-right: 20px;
+    gap: 24px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 5px 3px 5px rgba(109, 78, 78, 0.635);
 }
 .skill-description{
     color:#757575;
@@ -179,4 +187,86 @@ footer{
     border: 0;
     width:100%;
     font-size:20px;
+}
+
+
+/* Responsive Style */
+
+/* Mobile device */
+
+@media screen and (max-width:576px){
+    .header{
+        background-image: none;
+    }
+    nav,nav>ul, .banner, .skill-container, .resume-container, footer, .about-info-container{
+        flex-direction: column;
+    }
+    .banner .profile-picture {
+        width: 100%;
+    }
+    .banner,
+    #what-i-do-description {
+        padding: 20px;
+    }
+
+    .banner .profile-picture{
+        padding-right:44px;
+    }
+    nav{
+        margin:0 110px;
+    }
+    nav > ul{
+        gap:10px;
+    }
+    footer, .about{
+        padding:10px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .btn-primary{
+        margin-bottom:15px;
+    }
+
+    .banner .profile-picture {
+        
+        position: relative;
+    }
+
+    img.profile-picture {
+        position: absolute;
+        bottom: -18px;
+    }
+   
+
+.contact input[type="text"], .contact input[type="email"], textarea {
+    width: 80%;
+    
+}
+}
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .resume-container{
+        padding:20px;
+    }
+    footer{
+        padding:30px;
+    }
+
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+
+    .banner .profile-picture {
+        
+        position: relative;
+    }
+
+    img.profile-picture {
+        position: absolute;
+        bottom: -15px;
+    }
+   
 }
